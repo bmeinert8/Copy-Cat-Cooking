@@ -69,15 +69,14 @@ a {
 }
 
 .logo-img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
 }
 
 .desktop:hover {
@@ -90,19 +89,14 @@ a {
 .logo {
   display: flex;
   gap: 0.5rem;
-  font-size: 2rem;
-  font-weight: bold;
+  
 }
 
 .logo:hover {
   cursor: default;
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
 
-.name {
-  font
-}
 
 .name:hover {
   cursor: pointer;
@@ -154,8 +148,6 @@ a {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1rem;
-  color: #E3DDD7;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -195,3 +187,23 @@ a {
   transform: none;
 }
 
+/* Nav Text Presets */
+
+.nav-text-preset-1 {
+  font-family: "Young Serif", serif;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.nav-text-preset-2 {
+  font-family: "Outfit", serif;
+  font-size: 1.5rem;
+  color: #E3DDD7;
+}
+
+.nav-text-preset-3 {
+  font-family: "Outfit", serif;
+  font-size: 1rem;
+  color: #E3DDD7;
+}
