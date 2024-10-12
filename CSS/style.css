@@ -18,6 +18,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #f3e5d7
 }
 /*
   5. Improve media defaults
@@ -44,3 +45,8 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* font family 
+font-family: "Outfit", serif;
+font-family: "Young Serif", serif;
+*/
