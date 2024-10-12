@@ -1,0 +1,9 @@
+@media screen and (max-width: 64rem) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: flex;
+  }
+}
