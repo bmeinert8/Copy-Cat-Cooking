@@ -294,3 +294,12 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
+/* Meal Section */
+.meal-section-selector {
+  display: flex;
+  gap: 2.5rem;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
