@@ -263,9 +263,17 @@ a {
   flex-shrink: 0;
 }
 
+.image-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-self: stretch;
+  align-items: center;
+}
+
 .hero-image {
-  height: 25rem;
-  width: 50%;
+  height: 30rem;
+  width:55rem;
   align-self: center;
   border-radius: 0.75rem;
   background: url(images/main-img.png) lightgray 50% /cover no-repeat;
