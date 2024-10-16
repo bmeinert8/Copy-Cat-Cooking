@@ -295,6 +295,10 @@ a {
   align-items: center;
 }
 
+.hero-text {
+  width: 85%
+}
+
 /* Icon Break */
 
 .icon-break{
@@ -308,7 +312,7 @@ a {
 }
 
 .break{
-  width: 35%;
+  width: 20%;
   height: .2rem;
   background-color: #7A284E;
 }
