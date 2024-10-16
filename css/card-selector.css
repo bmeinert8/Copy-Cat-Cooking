@@ -22,7 +22,7 @@
   width: 17.5rem;
   align-self: center;
   border-radius: 0.75rem;
-  background: url(images/appetizer.png) lightgray 50% /cover no-repeat;
+  background: url(/images/appetizer.png) lightgray 50% /cover no-repeat;
 }
 
 .breakfast-image {
@@ -30,7 +30,7 @@
   width: 17.5rem;
   align-self: center;
   border-radius: 0.75rem;
-  background: url(images/breakfast.png) lightgray 50% /cover no-repeat;
+  background: url(/images/breakfast.png) lightgray 50% /cover no-repeat;
 }
 
 .dessert-image {
@@ -38,7 +38,7 @@
   width: 17.5rem;
   align-self: center;
   border-radius: 0.75rem;
-  background: url(images/dessert.png) lightgray 50% /cover no-repeat;
+  background: url(/images/dessert.png) lightgray 50% /cover no-repeat;
 }
 
 
@@ -47,7 +47,7 @@
   width: 17.5rem;
   align-self: center;
   border-radius: 0.75rem;
-  background: url(images/drinks.png) lightgray 50% /cover no-repeat;
+  background: url(/images/drinks.png) lightgray 50% /cover no-repeat;
 }
 
 .entrees-image {
@@ -55,7 +55,7 @@
   width: 17.5rem;
   align-self: center;
   border-radius: 0.75rem;
-  background: url(images/entree.png) lightgray 50% /cover no-repeat;
+  background: url(/images/entree.png) lightgray 50% /cover no-repeat;
 }
 
 .others-image {
@@ -63,7 +63,7 @@
   width: 17.5rem;
   align-self: center;
   border-radius: 0.75rem;
-  background: url(images/others.png) lightgray 50% /cover no-repeat;
+  background: url(/images/others.png) lightgray 50% /cover no-repeat;
 }
 
 .card-text-container{

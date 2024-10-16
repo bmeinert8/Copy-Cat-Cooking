@@ -276,7 +276,7 @@ a {
   width:55rem;
   align-self: center;
   border-radius: 0.75rem;
-  background: url(images/main-img.png) lightgray 50% /cover no-repeat;
+  background: url(/images/main-img.png) lightgray 50% /cover no-repeat;
 }
 
 .hero-text-container {
@@ -332,4 +332,13 @@ a {
 .meal-selector-link{
   text-decoration: underline;
   text-underline-offset: 0.5rem;
+}
+
+/* footer */
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E3DDD7;
+  padding: 1.5rem;
 }
