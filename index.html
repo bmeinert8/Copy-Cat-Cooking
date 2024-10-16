@@ -11,7 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Navbar -->
+
   <header>
     <nav id="desktop-nav">
       <div class="logo nav-text-preset-1">
@@ -25,6 +27,7 @@
               <li><a class="desktop nav-text-preset-2" href="./dessert.html">Desserts</a></li>
               <li><a class="desktop nav-text-preset-2" href="./drinks.html">Drinks</a></li>
               <li><a class="desktop nav-text-preset-2" href="./lunch-dinner.html">Entrées</a></li>
+              <li><a class="desktop nav-text-preset-2" href="./others.html">Other Recipes</a></li>
           </ul>
       </div>
     </nav>
@@ -45,6 +48,7 @@
               <li class="nav-text-preset-3"><a href="./dessert.html" onclick="toggleMenu()">Desserts</a></li>
               <li class="nav-text-preset-3"><a href="./drinks.html" onclick="toggleMenu()">Drinks</a></li>
               <li class="nav-text-preset-3"><a href="./lunch-dinner.html" onclick="toggleMenu()">Entrées</a></li>
+              <li class="nav-text-preset-3"><a href="./others.html" onclick="toggleMenu()">Other Recipes</a></li>
           </div>
       </div>
   </nav>
@@ -75,12 +79,26 @@
         </section>
       </div>
 
-       <!-- Meal Selections -->
+      <!-- Icon Section Break -->
+
+      <div class="icon-break">
+        <span class="break"></span>
+        <img src="images/cookbook.png" alt="image of a cookbook">
+        <span class="break"></span>
+      </div>
+
+       <!-- Meal Selections Section -->
+
+      <div class="meal-title-container">
+        <h2 class="nav-text-preset-1">Explore Our Recipes</h2>
+      </div>
+
+      <!--Card selectors-->
       <div class="meal-section-selector">
 
         <!-- Appetizer Card -->
 
-        <div class="card-container">
+        <div class="card-container" onclick="window.location='./appetizer.html'">
           <div class="card-image-container">
             <section class="appetizer-image"></section>
           </div>
@@ -95,7 +113,7 @@
 
         <!-- Breakfast Card -->
 
-        <div class="card-container">
+        <div class="card-container" onclick="window.location='./breakfast.html'">
           <div class="card-image-container">
             <section class="breakfast-image"></section>
           </div>
@@ -110,7 +128,7 @@
 
         <!-- Dessert Card -->
 
-        <div class="card-container">
+        <div class="card-container" onclick="window.location='./dessert.html'">
           <div class="card-image-container">
             <section class="dessert-image"></section>
           </div>
@@ -122,10 +140,12 @@
             </section>
           </div>
         </div>
+      </div>
+      <div class="meal-section-selector">
 
         <!-- Drinks Card -->
 
-        <div class="card-container">
+        <div class="card-container" onclick="window.location='./drinks.html'">
           <div class="card-image-container">
             <section class="drinks-image"></section>
           </div>
@@ -140,7 +160,7 @@
 
         <!-- Entrees Card -->
 
-        <div class="card-container">
+        <div class="card-container" onclick="window.location='./lunch-dinner.html'">
           <div class="card-image-container">
             <section class="entrees-image"></section>
           </div>
@@ -148,6 +168,21 @@
             <section>
               <div class="card-title-container">
                 <a class="text-preset-2 meal-selector-link" href="lunch-dinner.html">Entrée Recipes</a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Other Recipes -->
+
+        <div class="card-container" onclick="window.location='./others.html'">
+          <div class="card-image-container">
+            <section class="others-image"></section>
+          </div>
+          <div class="card-text-container">
+            <section>
+              <div class="card-title-container">
+                <a class="text-preset-2 meal-selector-link" href="lunch-dinner.html">Other Recipes</a>
               </div>
             </section>
           </div>

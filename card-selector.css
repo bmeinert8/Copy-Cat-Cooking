@@ -58,6 +58,14 @@
   background: url(images/entree.png) lightgray 50% /cover no-repeat;
 }
 
+.others-image {
+  height: 17.5rem;
+  width: 17.5rem;
+  align-self: center;
+  border-radius: 0.75rem;
+  background: url(images/others.png) lightgray 50% /cover no-repeat;
+}
+
 .card-text-container{
   display: flex;
   flex-direction: column;

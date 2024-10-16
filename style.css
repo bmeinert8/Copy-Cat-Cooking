@@ -288,21 +288,45 @@ a {
   align-self: stretch;
 }
 
-.hero-title-container{
+.hero-title-container, .meal-title-container{
   display: flex;
   gap:1.5rem;
   flex-direction: column;
   align-items: center;
 }
 
+/* Icon Break */
+
+.icon-break{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  align-self: stretch;
+  padding: 1.5rem;
+}
+
+.break{
+  width: 35%;
+  height: .2rem;
+  background-color: #7A284E;
+}
+
 /* Meal Section */
+.meal-title-container{
+  align-self: stretch;
+  padding: 1.5rem;
+}
+
 .meal-section-selector {
   display: flex;
-  gap: 2.5rem;
+  gap: 3.5rem;
   align-self: stretch;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 3.5rem;
 }
 
 .meal-selector-link{

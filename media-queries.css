@@ -9,9 +9,9 @@
 }
 
 
-/* mobile */
+/* Small Devices */
 
-@media screen and (max-width: 43.25rem) {
+@media screen and (max-width: 43.259rem) {
 
   nav {
     height: 6.5vh;
@@ -46,8 +46,8 @@
 
 }
 
-/* tablet */
-@media screen and (min-width: 43.26rem) and (max-width: 64rem) {
+/* Medium Devices */
+@media screen and (min-width: 43.26rem) and (max-width: 70.25rem) {
   .container{
     padding: 1rem 1.5rem;
   }
@@ -86,6 +86,11 @@
     width: 12.5rem;
   }
 
+  .others-image {
+    height: 12.5rem;
+    width: 12.5rem;
+  }
+
   .meal-selector-link {
     font-size: 1.25rem;
   }
@@ -98,5 +103,6 @@
   .card-container:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
   }
 }
