@@ -302,4 +302,10 @@ a {
   align-self: stretch;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.meal-selector-link{
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
