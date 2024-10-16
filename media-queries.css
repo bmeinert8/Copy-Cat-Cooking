@@ -60,4 +60,43 @@
   .hero-image {
     width: 40rem;
   }
+
+  .appetizer-image {
+    height: 12.5rem;
+    width: 12.5rem;
+  }
+
+  .breakfast-image {
+    height: 12.5rem;
+    width: 12.5rem;
+  }
+
+  .dessert-image {
+    height: 12.5rem;
+    width: 12.5rem;
+  }
+
+  .drinks-image {
+    height: 12.5rem;
+    width: 12.5rem;
+  }
+
+  .entrees-image {
+    height: 12.5rem;
+    width: 12.5rem;
+  }
+
+  .meal-selector-link {
+    font-size: 1.25rem;
+  }
+
+
+}
+
+/* desktop */
+@media screen and (min-width: 64.01rem) {
+  .card-container:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
 }
