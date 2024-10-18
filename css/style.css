@@ -338,10 +338,40 @@ a {
   text-underline-offset: 0.5rem;
 }
 
+
+/* breakfast preview cards page
+
+/* Page Title Container */
+.page-title-container{
+  display: flex;
+  align-self: stretch;
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+/* preview card container */
+.preview-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.breakfast-recipes{
+  display: flex;
+  align-self: stretch;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}
+
 /* footer */
 .footer-container{
   display: flex;
-  align-items: center;
+
   justify-content: center;
   background-color: #E3DDD7;
   padding: 1.5rem;
