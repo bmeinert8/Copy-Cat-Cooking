@@ -19,12 +19,6 @@ p {
   box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
-.card-image {
-  width: 288px;
-  height: 288px;
-  border-radius: 20px;
-  background: url(/images/cinnabon-rolls.png) lightgray 50% /cover no-repeat;
-}
 
 .text-container {
   display: flex;
@@ -34,63 +28,68 @@ p {
   align-self: stretch;
 }
 
-
-.tab-text{
-  font-family: Figtree;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 150%;
-  color: #111111;
-}
-
-.publish-text {
-  font-family: Figtree;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-  color: #111111;
-}
-
-.title {
-  align-self: stretch;
-  font-family: Figtree;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 150%;
-}
-
-.description {
-  align-self: stretch;
-  width: 100%;
-  color:#6B6B6B;
-  font-family: Figtree;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-}
-
 .author-container {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.8rem;
 }
 
-.author-image {
-  width: 32px;
-  height: 32px;
+/* preview card images */
+
+.cinnabon-cr-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/cinnabon-rolls.png) lightgray 50% /cover no-repeat;
 }
 
-.author-text {
-  color:#111;
-  font-family: Figtree;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 150%;
+.ihop-pc-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/ihop-pancake.png) lightgray 50% /cover no-repeat;
+}
+
+.cb-pancakes-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/cb-pancakes.png) lightgray 50% /cover no-repeat;
+}
+
+.sb-lemon-loaf-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/sb-lemon-loaf.png) lightgray 50% /cover no-repeat;
+}
+
+.sb-pumpkin-bread-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/sb-pumpkin-bread.png) lightgray 50% /cover no-repeat;
+}
+
+.cb-hashbrown-casserole-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/cb-hasbrown-casserole.png) lightgray 50% /cover no-repeat;
+}
+
+.be-biscuits-gravy-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/be-biscuits-gravy.png) lightgray 50% /cover no-repeat;
+}
+
+.fw-bacon-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/fw-bacon.png) lightgray 50% /cover no-repeat;
 }
 
 @media (min-width: 900px){
