@@ -149,6 +149,63 @@ p {
   background: url(/images/fw-bacon.png) lightgray 50% /cover no-repeat;
 }
 
+/* Desserts preview card images */
+
+.cb-apple-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/cb-apple.png) lightgray 50% /cover no-repeat;
+}
+
+.sb-bars-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/sb-bars.png) lightgray 50% /cover no-repeat;
+}
+
+.cf-original-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/cf-original.png) lightgray 50% /cover no-repeat;
+}
+
+.bundt-chocolate-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/bundt-chocolate.jpg) lightgray 50% /cover no-repeat;
+}
+
+.og-tiramisu-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/tiramisu.png) lightgray 50% /cover no-repeat;
+}
+
+.cream-pies-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/cream-pie.png) lightgray 50% /cover no-repeat;
+}
+
+.maple-blondie-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/maple-blondie.png) lightgray 50% /cover no-repeat;
+}
+
+.lemon-pie-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/lemon-pie.png) lightgray 50% /cover no-repeat;
+}
 @media (min-width: 900px){
   .card-hover:hover {
   box-shadow: 16px 16px 0px 0px rgba(0, 0, 0, 0.25);
