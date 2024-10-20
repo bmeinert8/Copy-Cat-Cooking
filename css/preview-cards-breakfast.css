@@ -1,0 +1,141 @@
+
+p {
+  margin: 0;
+}
+
+
+.card {
+  background-color: #FFFFFF;
+  width: 336px;
+  height: 474px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  gap: 24px;
+  flex-shrink: 0;
+  border: 1px solid #111111;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* preview card images */
+
+.cinnabon-cr-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/cinnabon-rolls.png) lightgray 50% /cover no-repeat;
+}
+
+.ihop-pc-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/ihop-pancake.png) lightgray 50% /cover no-repeat;
+}
+
+.cb-pancakes-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/cb-pancakes.png) lightgray 50% /cover no-repeat;
+}
+
+.sb-lemon-loaf-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/sb-lemon-loaf.png) lightgray 50% /cover no-repeat;
+}
+
+.sb-pumpkin-bread-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/sb-pumpkin-bread.png) lightgray 50% /cover no-repeat;
+}
+
+.cb-hashbrown-casserole-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/cb-hasbrown-casserole.png) lightgray 50% /cover no-repeat;
+}
+
+.be-biscuits-gravy-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/be-biscuits-gravy.png) lightgray 50% /cover no-repeat;
+}
+
+.fw-bacon-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/fw-bacon.png) lightgray 50% /cover no-repeat;
+}
+
+@media (min-width: 900px){
+  .card-hover:hover {
+  box-shadow: 16px 16px 0px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+  color: #854632;
+  cursor: pointer;
+}
+
+.title:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+}
+
+@media (max-width: 450px) {
+
+  .container {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 156px 24px 155px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    width: 327px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tab-text .publich-text {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 14px;
+  }
+
+}
