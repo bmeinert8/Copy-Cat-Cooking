@@ -1,0 +1,201 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #F3E5D7;
+  display: flex;
+  padding: 8rem 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.main-container{
+  display: flex;
+  width: 46rem;
+  padding: 2.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 1.5rem;
+  background:#FFFFFF;
+}
+
+.top-image{
+  height: 22rem;
+  align-self: stretch;
+  border-radius:0.75rem;
+  background: url(/images/cinnabon-rolls.png) lightgray 50% /cover no-repeat;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.text-container-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+  align-self: stretch;
+}
+
+.text-preset-1{
+  align-self: stretch;
+  font-family:"Young Serif", serif;
+  color: var(--color-stone-900, #312E2C);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.text-preset-2{
+  align-self: stretch;
+  color: #854632;
+  font-family: "Young Serif";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.text-preset-3{
+  align-self: stretch;
+  color: #7A284E;
+  font-family: Outfit;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.text-preset-4{
+  color: #5F564D;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.title-container{
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.prep-container{
+  display: flex;
+  width: 41rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  align-self: stretch;
+  border-radius: 0.75rem;
+  background-color: #FFF7FB;
+}
+
+.list-item{
+  display:flex;
+  gap: 1.8rem;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.ingreidients-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-self: stretch;
+}
+
+hr{
+  width: 100%;
+  border: 0.5px solid #E3DDD7;
+}
+
+.preset-4-alt{
+  color: #854632;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+section{
+  width: 100%;
+}
+
+.nutrition-p{
+  margin-bottom: 0.75rem;
+}
+
+.table-row{
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+
+.table-element{
+  display: flex;
+  width: 280px;
+  margin: 0.75rem 0;
+}
