@@ -34,7 +34,64 @@ p {
   gap: 0.8rem;
 }
 
-/* preview card images */
+/* appetizers preview card images */
+.rr-pickles-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/rr-pickles.png) lightgray 50% /cover no-repeat;
+}
+
+.tr-rolls-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/tr-rolls.png) lightgray 50% /cover no-repeat;
+}
+
+.potato-skins-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/potato-skin.png) lightgray 50% /cover no-repeat;
+}
+
+.zucchini-fritte-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/zucchini-fritte.png) lightgray 50% /cover no-repeat;
+}
+
+.ab-wonton-tacos-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/ab-wonton-taco.png) lightgray 50% /cover no-repeat;
+}
+
+.crispy-bites-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/crispy-bites.png) lightgray 50% /cover no-repeat;
+}
+
+.bw-nachos-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/bw-nachos.png) lightgray 50% /cover no-repeat;
+}
+
+.ab-dip-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/ab-dip.png) lightgray 50% /cover no-repeat;
+}
+
+/* breakfast preview card images */
 
 .cinnabon-cr-image {
   width: 288px;
