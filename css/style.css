@@ -393,6 +393,28 @@ a {
   justify-content: center;
 }
 
+/* Suggestions Section */
+.suggestion-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  align-self: stretch;
+}
+
+.suggestion-button {
+ padding: 1rem 2rem;
+  background-color: #7A284E;
+  color: #E3DDD7;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+}
+
 /* footer */
 .footer-container{
   display: flex;

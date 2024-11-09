@@ -113,4 +113,16 @@
     transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
+
+  button:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  button:active{
+    background-color: #9f4770;
+    transform: scale(0.95);
+    transition: all 0.1s ease-in-out;
+  }
 }
