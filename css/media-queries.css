@@ -5,13 +5,14 @@
 
   #mobile-nav {
     display: flex;
+    width: 100%;
   }
 }
 
 
 /* Small Devices */
 
-@media screen and (max-width: 43.259rem) {
+@media screen and (max-width: 56.24rem) {
 
   nav {
     height: 6.5vh;
@@ -43,11 +44,18 @@
     width: 40px;
   }
 
+  .meal-section-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+    align-items: center;
+  }
+
 
 }
 
 /* Medium Devices */
-@media screen and (min-width: 43.26rem) and (max-width: 70.25rem) {
+@media screen and (min-width: 56.25rem) and (max-width: 70.25rem) {
   .container{
     padding: 1rem 1.5rem;
   }

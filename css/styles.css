@@ -73,7 +73,6 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 22rem;
   align-self: stretch;
   border-radius:0.75rem;
-  background: url(/images/cinnabon-rolls.png) lightgray 50% /cover no-repeat;
 }
 
 .text-container{
@@ -198,4 +197,12 @@ section{
   display: flex;
   width: 280px;
   margin: 0.75rem 0;
+}
+
+.cinnabon-roll{
+  background: url(/images/cinnabon-rolls.png) lightgray 50% /cover no-repeat;
+}
+
+.ihopbp{
+  background: url(/images/ihop-pancake.png) lightgray 50% /cover no-repeat;
 }
