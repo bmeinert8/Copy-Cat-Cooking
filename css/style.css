@@ -400,7 +400,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   align-self: stretch;
 }
 
