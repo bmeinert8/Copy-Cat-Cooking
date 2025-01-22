@@ -1,6 +1,6 @@
 const breakfast = [
   {
-    image: "./images/breakfast/cinnabon-rolls.png",
+    image: "cinnabon-cr-image",
     published: "20 October 2024",
     name: "Cinnabon Cinnamon Rolls",
     description: "This recipe recreates the iconic, gooey, and delicious sweet rolls, topped with rich creamy frosting and bursting with cinnamon-spiced delight.",
@@ -13,7 +13,7 @@ const breakfast = [
     ]
   },
   {
-    image: "./images/breakfast/ihop-pancake.png",
+    image: "ihop-pc-image",
     published: "20 October 2024",
     name: "IHOP Buttermilk Pancakes",
     description: "This recipe captures the essence of fluffy, golden-brown pancakes with a touch of sweetness and a perfect buttermilk tang.",
@@ -28,7 +28,7 @@ const breakfast = [
     ]
   },
   {
-    image: "./images/breakfast/cb-pancakes.png",
+    image: "cb-pancakes-image",
     published: "20 October 2024",
     name: "Sweet Potato Banana Pancakes",
     description: "This recipe blends the natural sweetness of bananas with the hearty goodness of sweet potatoes, creating fluffy, nutrient-packed pancakes.",
@@ -42,7 +42,7 @@ const breakfast = [
     ]
   },
   {
-    image: "./images/breakfast/sb-lemon-loaf.png",
+    image: "sb-lemon-loaf-image",
     published: "20 October 2024",
     name: "Starbucks Lemon Loaf",
     description: "This recipe delivers a moist, zesty cake bursting with lemon flavor and topped with a tangy glaze, recreating the beloved café treat.",
@@ -58,7 +58,7 @@ const breakfast = [
     ]
   },
   {
-    image: "./images/breakfast/sb-pumpkin-bread.png",
+    image: "sb-pumpkin-bread-image",
     published: "20 October 2024",
     name: "Starbucks Pumpkin Bread",
     description: "This recipe serves up a moist, warmly spiced loaf with the perfect balance of pumpkin flavor and sweetness, just like the seasonal favorite.",
@@ -74,7 +74,7 @@ const breakfast = [
     ]
   },
   {
-    image: "./images/breakfast/cb-hashbrown-casserole.png",
+    image: "cb-hashbrown-casserole-image",
     published: "20 October 2024",
     name: "Cracker Barrel Hashbrown Casserole",
     description: "This recipe recreates the comforting, cheesy, and creamy dish with tender shredded potatoes, making it the ultimate indulgent side.",
@@ -88,7 +88,7 @@ const breakfast = [
     ]
   },
   {
-    image: "./images/breakfast/be-biscuits-gravy.png",
+    image: "be-biscuits-gravy-image",
     published: "20 October 2024",
     name: "Bob Evans Biscuits and Gravy",
     description: "This recipe delivers fluffy, buttery biscuits smothered in rich, creamy sausage gravy, capturing the hearty comfort of the breakfast classic.",
@@ -104,7 +104,7 @@ const breakfast = [
     ]
   },
   {
-    image: "./images/breakfast/fw-bacon.png",
+    image: "fw-bacon-image",
     published: "20 October 2024",
     name: "First Watch Million Dollar Bacon",
     description: "This recipe offers sweet, spicy, and caramelized thick cut bacon that;s baked to crispy perfection, making it a truly indulgent treat.",
@@ -119,4 +119,28 @@ const breakfast = [
       "dollar"
     ]
   }
-];
+]
+
+let breakfastHTML = '';
+
+breakfast.forEach((item) => {
+  breakfastHTML += `
+    <div class="content-container " onclick="window.location='./cinnabon.html'">
+      <div class="card card-hover">
+        <div class="${item.image}"></div>
+        <div class="text-container">
+          <p class="publish-text-preset">${item.published}</p>
+          <p class="preview-title-text-preset title card-hover">${item.name}</p>
+          <p class="text-preset-4">${item.description}</p>
+        </div>
+        <div class="author-container">
+          <p class="publish-text-preset">Recipe by:</p>
+          <p class="author-text-preset">${item.author}</p>
+        </div>  
+      </div>
+    </div>
+  `
+});
+
+
+document.querySelector('.js-preview-container').innerHTML = breakfastHTML;

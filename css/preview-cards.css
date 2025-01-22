@@ -97,56 +97,56 @@ p {
   width: 288px;
   height: 288px;
   border-radius: 20px;
-  background: url(/images/cinnabon-rolls.png) lightgray 50% /cover no-repeat;
+  background: url(/images/breakfast/cinnabon-rolls.png) lightgray 50% /cover no-repeat;
 }
 
 .ihop-pc-image {
   width: 288px;
   height: 288px;
   border-radius: 20px;
-  background: url(/images/ihop-pancake.png) lightgray 50% /cover no-repeat;
+  background: url(/images/breakfast/ihop-pancake.png) lightgray 50% /cover no-repeat;
 }
 
 .cb-pancakes-image {
   width: 288px;
   height: 288px;
   border-radius: 20px;
-  background: url(/images/cb-pancakes.png) lightgray 50% /cover no-repeat;
+  background: url(/images/breakfast/cb-pancakes.png) lightgray 50% /cover no-repeat;
 }
 
 .sb-lemon-loaf-image {
   width: 288px;
   height: 288px;
   border-radius: 20px;
-  background: url(/images/sb-lemon-loaf.png) lightgray 50% /cover no-repeat;
+  background: url(/images/breakfast/sb-lemon-loaf.png) lightgray 50% /cover no-repeat;
 }
 
 .sb-pumpkin-bread-image {
   width: 288px;
   height: 288px;
   border-radius: 20px;
-  background: url(/images/sb-pumpkin-bread.png) lightgray 50% /cover no-repeat;
+  background: url(/images/breakfast/sb-pumpkin-bread.png) lightgray 50% /cover no-repeat;
 }
 
 .cb-hashbrown-casserole-image {
   width: 288px;
   height: 288px;
   border-radius: 20px;
-  background: url(/images/cb-hasbrown-casserole.png) lightgray 50% /cover no-repeat;
+  background: url(/images/breakfast/cb-hasbrown-casserole.png) lightgray 50% /cover no-repeat;
 }
 
 .be-biscuits-gravy-image {
   width: 288px;
   height: 288px;
   border-radius: 20px;
-  background: url(/images/be-biscuits-gravy.png) lightgray 50% /cover no-repeat;
+  background: url(/images/breakfast/be-biscuits-gravy.png) lightgray 50% /cover no-repeat;
 }
 
 .fw-bacon-image {
   width: 288px;
   height: 288px;
   border-radius: 20px;
-  background: url(/images/fw-bacon.png) lightgray 50% /cover no-repeat;
+  background: url(/images/breakfast/fw-bacon.png) lightgray 50% /cover no-repeat;
 }
 
 /* Desserts preview card images */
