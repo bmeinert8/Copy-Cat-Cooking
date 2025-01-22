@@ -206,6 +206,30 @@ p {
   border-radius: 20px;
   background: url(/images/desserts/lemon-pie.png) lightgray 50% /cover no-repeat;
 }
+
+/* Drinks */
+
+.sb-pink-drink-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/drinks/sb-pink-drink.png) lightgray 50% /cover no-repeat;
+}
+
+.sb-smores-frapp-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/drinks/sb-smores-frap.png) lightgray 50% /cover no-repeat;
+}
+
+.hp-butterbeer-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/drinks/hp-butterbeer.png) lightgray 50% /cover no-repeat;
+}
+
 @media (min-width: 900px){
   .card-hover:hover {
   box-shadow: 16px 16px 0px 0px rgba(0, 0, 0, 0.25);
