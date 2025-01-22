@@ -423,3 +423,37 @@ a {
   background-color: #E3DDD7;
   padding: 1.5rem;
 }
+
+/* Search Bar */
+.search-bar-section{
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar{
+  width: 20rem;
+  padding: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  font-size: 1.1rem;
+  border: none;
+}
+
+.search-button{
+  background-color: #7A284E;
+  padding: 0.33rem 0.4rem;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.search-icon{
+  height: 32px;
+  width: 32px;
+}
+
+.search-button:hover{
+  transform: none;
+}
