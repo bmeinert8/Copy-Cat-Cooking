@@ -1,6 +1,6 @@
 const appetizers = [
   {
-    image: "./images/appetizers/rr-pickles.png",
+    image: "rr-pickles-image",
     published: "20 October 2024",
     name: "Red Robin Fried Pickles",
     description: "Picture this: crunchy pickle slices, battered in seasoned breading and deep-fried to golden perfection, served with a zesty dipping sauce.",
@@ -15,7 +15,7 @@ const appetizers = [
     ]
   },
   {
-    image: "./images/appetizers/tr-rolls.png",
+    image: "tr-rolls-image",
     published: "20 October 2024",
     name: "Texas RoadHouse Rolls",
     description: "This recipe delivers soft, fluffy, and golden yeast rolls with a hint of sweetness, paired perfectly with a rich cinnamon honey butter.",
@@ -29,7 +29,7 @@ const appetizers = [
     ]
   },
   {
-    image: "./images/appetizers/potato-skin.png",
+    image: "potato-skins-image",
     published: "20 October 2024",
     name: "TGI Friday's Loaded Potato Skins",
     description: "Golden, crispy potoato skins loaded with melted cheese, bacon, and green onions, served with a side of cool sour cream for the ultimate indulgent bite.",
@@ -46,7 +46,7 @@ const appetizers = [
     ]
   },
   {
-    image: "./images/appetizers/zuchini-fritte.png",
+    image: "zucchini-fritte-image",
     published: "20 October 2024",
     name: "Carabba's Zucchini Fritte",
     description: "Crispy, tender zucchini strips coated in a seasoned batter abd fried to perfection, served with a tangy dipping sauce for a perfect Italian-inspired snack.",
@@ -63,7 +63,7 @@ const appetizers = [
     ]
   },
   {
-    image: "./images/appetizers/ab-wonton-taco.png",
+    image: "ab-wonton-tacos-image",
     published: "20 October 2024",
     name: "Applebee's Chicken Wonton Taco",
     description: "This recipe brings the zesty flavors of tender chicken, crunchy slaw, and a sweet-spicy sauce wrapped in a crispy wonton shell.",
@@ -79,7 +79,7 @@ const appetizers = [
     ]
   },
   {
-    image: "./images/appetizers/crispy-bites.png",
+    image: "crispy-bites-image",
     published: "20 October 2024",
     name: "Chili's Crispy Cheddar Bites",
     description: "This copycat recipe recreates the crunchy, golden cheese bites, perfectly seasoned and fried to a crispy perfection.",
@@ -95,7 +95,7 @@ const appetizers = [
     ]
   },
   {
-    image: "./images/appetizers/bw-nachos.png",
+    image: "bw-nachos-image",
     published: "20 October 2024",
     name: "Buffalo Wild Wings Ultimate Nachos",
     description: "This recipe stacks layers of crispy tortilla chips with melty cheese, spicy jalapenos, and savory toppings, creating the ultimate game-day snack experience.",
@@ -111,7 +111,7 @@ const appetizers = [
     ]
   },
   {
-    image: "./images/appetizers/ab-dip.png",
+    image: "ab-dip-image",
     published: "20 October 2024",
     name: "Applebee's Spinach and Artichoke Dip",
     description: "This recipe delivers a creamy, cheesy blend of spinach and artichokes, perfectly seasoned for a deliciously warm, shareable appetizer.",
@@ -127,3 +127,26 @@ const appetizers = [
     ]
   },
 ]
+
+let appetizerHTML = "";
+
+appetizers.forEach((appetizer) => {
+  appetizerHTML += `
+    <div class="content-container " onclick="window.location='#'">
+    <div class="card card-hover">
+      <div class="${appetizer.image}"></div>
+      <div class="text-container">
+        <p class="publish-text-preset">${appetizer.published}</p>
+        <p class="preview-title-text-preset title card-hover">${appetizer.name}</p>
+        <p class="text-preset-4">${appetizer.description}</p>
+      </div>
+      <div class="author-container">
+        <p class="publish-text-preset">Recipe by:</p>
+        <p class="author-text-preset">${appetizer.author}</p>
+      </div>  
+    </div>
+  </div>
+  `;
+});
+document.querySelector('.js-preview-container').
+  innerHTML = appetizerHTML;
