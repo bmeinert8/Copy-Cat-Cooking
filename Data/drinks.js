@@ -46,6 +46,38 @@ const drinks = [
       "chocolate",
       "marshmallow"
     ]
+  },
+  {
+    image: "rr-lemonade-image",
+    published: "22 January 2025",
+    name: "Red Robin Freckled Lemonade",
+    description: "This recipe combines the tartness of lemonade with the sweetness of strawberries, creating a refreshing summer drink.",
+    author: "no-author",
+    keywords: [
+      "red robin",
+      "freckled lemonade",
+      "lemonade",
+      "strawberries",
+      "summer",
+      "drink",
+      "beverage"
+    ]
+  },
+  {
+    image: "frosted-lemonade-image",
+    published: "22 January 2025",
+    name: "Chick-fil-A Frosted Lemonade",
+    description: "This recipe blends creamy vanilla ice cream with tangy lemonade, creating a sweet and refreshing beverage.",
+    author: "no-author",
+    keywords: [
+      "chick-fil-a",
+      "frosted lemonade",
+      "lemonade",
+      "vanilla ice cream",
+      "ice cream",
+      "beverage",
+      "drink"
+    ]
   }
 ]
 

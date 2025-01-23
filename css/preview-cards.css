@@ -230,6 +230,20 @@ p {
   background: url(/images/drinks/hp-butterbeer.png) lightgray 50% /cover no-repeat;
 }
 
+.rr-lemonade-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/drinks/rr-freckled-lemonade.png) lightgray 50% /cover no-repeat;
+}
+
+.frosted-lemonade-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/drinks/frosted-lemonade.png) lightgray 50% /cover no-repeat;
+}
+
 @media (min-width: 900px){
   .card-hover:hover {
   box-shadow: 16px 16px 0px 0px rgba(0, 0, 0, 0.25);
