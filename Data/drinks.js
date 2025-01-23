@@ -83,7 +83,7 @@ const drinks = [
     image: "sk-hulk-image",
     published: "22 January 2025",
     name: "Smoothie King The Hulk",
-    description: " Boost your energy and build muscle with Smoothie King's Hulk™ smoothie! Packed with bananas, protein powder.",
+    description: " Boost your energy and build muscle with Smoothie King's Hulk™ smoothie! Packed with bananas, protein powder in either vanilla chocolate or strawberry.",
     author: "no-author",
     keywords: [
       "smoothie king",
@@ -94,6 +94,22 @@ const drinks = [
       "energy",
       "muscle",
       "recovery"
+    ]
+  },
+  {
+    image: "dd-orange-mango-image",
+    published: "22 January 2025",
+    name: "Dunkin' Orange Mango Refresher",
+    description: "This recipe delivers a refreshing blend of orange and mango flavors, perfect for cooling off and recharing on a warm sunny day.",
+    author: "no-author",
+    keywords: [
+      "dunkin donuts",
+      "orange mango refresher",
+      "orange",
+      "mango",
+      "refreshing",
+      "beverage",
+      "drink"
     ]
   }
 ]

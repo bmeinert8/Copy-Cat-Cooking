@@ -251,6 +251,13 @@ p {
   background: url(/images/drinks/sk-hulk.png) lightgray 50% /cover no-repeat;
 }
 
+.dd-orange-mango-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/drinks/dd-orange-mango.png) lightgray 50% /cover no-repeat;
+}
+
 @media (min-width: 900px){
   .card-hover:hover {
   box-shadow: 16px 16px 0px 0px rgba(0, 0, 0, 0.25);
