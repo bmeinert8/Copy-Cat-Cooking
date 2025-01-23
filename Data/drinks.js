@@ -78,6 +78,23 @@ const drinks = [
       "beverage",
       "drink"
     ]
+  },
+  {
+    image: "sk-hulk-image",
+    published: "22 January 2025",
+    name: "Smoothie King The Hulk",
+    description: " Boost your energy and build muscle with Smoothie King's Hulk™ smoothie! Packed with bananas, protein powder.",
+    author: "no-author",
+    keywords: [
+      "smoothie king",
+      "hulk",
+      "smoothie",
+      "banana",
+      "protein powder",
+      "energy",
+      "muscle",
+      "recovery"
+    ]
   }
 ]
 
