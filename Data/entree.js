@@ -87,6 +87,20 @@ const entrees = [
       'burritos',
       'entree'
     ]
+  },
+  {
+    image: 'mcd-filet-o-fish-image',
+    published: '24 January 2025',
+    name: 'McDonald\'s Filet-O-Fish',
+    description: 'This recipe features a crispy fish filet topped with tartar sauce and American cheese, mimicking the popular sandwich from McDonald\'s.',
+    author: 'no-author',
+    keywords: [
+      'mcdonalds',
+      'filet-o-fish',
+      'fish',
+      'sandwich',
+      'fast food'
+    ]
   }
 
 ]

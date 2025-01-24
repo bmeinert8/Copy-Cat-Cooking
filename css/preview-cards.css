@@ -258,6 +258,8 @@ p {
   background: url(/images/drinks/dd-orange-mango.png) lightgray 50% /cover no-repeat;
 }
 
+
+
 /* Entrees */
 .og-shrimp-alf-image {
   width: 288px;
@@ -301,6 +303,12 @@ p {
   background: url(/images/entrees/chipotle-barbacoa.png) lightgray 50% /cover no-repeat;
 }
 
+.mcd-filet-o-fish-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/entrees/mcd-filet-o-fish.png) lightgray 50% /cover no-repeat;
+}
 
 @media (min-width: 900px){
   .card-hover:hover {
