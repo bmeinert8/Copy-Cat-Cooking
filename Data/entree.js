@@ -31,7 +31,21 @@ const entrees = [
       'entree'
     ]
   },
-  
+  {
+    image: 'panda-express-orange-chicken-image',
+    published: '24 January 2025',
+    name: 'Panda Express Orange Chicken',
+    description: 'This recipe features crispy chicken coated in a sweet and tangy orange sauce, mimicking the popular dish from Panda Express.',
+    author: 'no-author',
+    keywords: [
+      'panda express',
+      'orange chicken',
+      'chicken',
+      'orange sauce',
+      'entree'
+    ]
+  },
+
 ]
 
 let entreesHTML = '';
