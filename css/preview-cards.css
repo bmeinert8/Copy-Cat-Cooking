@@ -266,6 +266,13 @@ p {
   background: url(/images/entrees/og-shrimp-alf.png) lightgray 50% /cover no-repeat;
 }
 
+.ccf-spicy-cashew-chicken-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/entrees/ccf-spicy-cashew-chicken.png) lightgray 50% /cover no-repeat;
+}
+
 @media (min-width: 900px){
   .card-hover:hover {
   box-shadow: 16px 16px 0px 0px rgba(0, 0, 0, 0.25);

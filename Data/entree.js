@@ -15,6 +15,22 @@ const entrees = [
       "seafood"
     ]
   },
+  {
+    image: 'ccf-spicy-cashew-chicken-image',
+    published: '24 January 2025',
+    name: 'Spicy Cashew Chicken',
+    description: 'This recipe features a Cheesecake Factory mock of tender chicken, crunchy cashews, and a spicy sauce that is sure to please your taste buds.',
+    author: 'no-author',
+    keywords: [
+      'cheesecake factory',
+      'spicy cashew chicken',
+      'cashew chicken',
+      'chicken',
+      'cashews',
+      'spicy',
+      'entree'
+    ]
+  },
 ]
 
 let entreesHTML = '';
