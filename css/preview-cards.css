@@ -310,6 +310,13 @@ p {
   background: url(/images/entrees/mcd-filet-o-fish.png) lightgray 50% /cover no-repeat;
 }
 
+.red-lobster-lobster-tail-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/entrees/rl-lobster-tail.png) lightgray 50% /cover no-repeat;
+}
+
 @media (min-width: 900px){
   .card-hover:hover {
   box-shadow: 16px 16px 0px 0px rgba(0, 0, 0, 0.25);

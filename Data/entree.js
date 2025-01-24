@@ -101,6 +101,20 @@ const entrees = [
       'sandwich',
       'fast food'
     ]
+  },
+  {
+    image: 'red-lobster-lobster-tail-image',
+    published: '24 January 2025',
+    name: 'Broiled Lobster Tail',
+    description: 'This recipe features a succulent lobster tail broiled to perfection, mimicking the popular dish from Red Lobster.',
+    author: 'no-author',
+    keywords: [
+      'red lobster',
+      'lobster tail',
+      'lobster',
+      'seafood',
+      'entree'
+    ]
   }
 
 ]
