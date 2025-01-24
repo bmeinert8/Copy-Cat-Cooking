@@ -45,6 +45,21 @@ const entrees = [
       'entree'
     ]
   },
+  {
+    image: 'panera-broccoli-cheddar-soup-image',
+    published: '24 January 2025',
+    name: 'Panera Broccoli Cheddar Soup',
+    description: 'This recipe features a creamy soup loaded with broccoli florets and shredded cheddar cheese, mimicking the popular dish from Panera Bread.',
+    author: 'no-author',
+    keywords: [
+      'panera bread',
+      'broccoli cheddar soup',
+      'broccoli',
+      'cheddar cheese',
+      'soup'
+    ]
+  },
+  
 
 ]
 
