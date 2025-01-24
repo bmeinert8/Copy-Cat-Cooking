@@ -72,6 +72,21 @@ const entrees = [
       'grilled',
       'entree'
     ]
+  },
+  {
+    image: 'chipotle-barbacoa-image',
+    published: '24 January 2025',
+    name: 'Chipotle Barbacoa',
+    description: 'This recipe features tender beef slow-cooked in a blend of spices, creating a flavorful and juicy meat perfect for tacos, burritos, and more.',
+    author: 'no-author',
+    keywords: [
+      'chipotle',
+      'barbacoa',
+      'beef',
+      'tacos',
+      'burritos',
+      'entree'
+    ]
   }
 
 ]

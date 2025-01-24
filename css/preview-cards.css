@@ -294,6 +294,13 @@ p {
   background: url(/images/entrees/tr-steak.png) lightgray 50% /cover no-repeat;
 }
 
+.chipotle-barbacoa-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/entrees/chipotle-barbacoa.png) lightgray 50% /cover no-repeat;
+}
+
 
 @media (min-width: 900px){
   .card-hover:hover {
