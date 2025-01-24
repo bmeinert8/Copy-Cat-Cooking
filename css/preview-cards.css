@@ -287,6 +287,12 @@ p {
   background: url(/images/entrees/Panera-Broccoli-Cheddar-Soup.png) lightgray 50% /cover no-repeat;
 }
 
+.texas-roadhouse-steak-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/entrees/tr-steak.png) lightgray 50% /cover no-repeat;
+}
 
 
 @media (min-width: 900px){

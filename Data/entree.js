@@ -59,7 +59,20 @@ const entrees = [
       'soup'
     ]
   },
-  
+  {
+    image: 'texas-roadhouse-steak-image',
+    published: '24 January 2025',
+    name: 'Texas Roadhouse Steak',
+    description: 'This recipe features a juicy steak seasoned with a blend of spices and grilled to perfection, mimicking the popular dish from Texas Roadhouse.',
+    author: 'no-author',
+    keywords: [
+      'texas roadhouse',
+      'steak',
+      'beef',
+      'grilled',
+      'entree'
+    ]
+  }
 
 ]
 
