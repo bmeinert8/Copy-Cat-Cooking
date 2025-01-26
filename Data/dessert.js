@@ -1,4 +1,4 @@
-const desserts = [
+let desserts = [
   { 
     image: "cb-apple-image",
     published: "20 October 2024",
@@ -114,9 +114,13 @@ const desserts = [
   },
 ]
 
+/* Render Desserts html for the page */
+
 let dessertsHTML = '';
 
-  desserts.forEach((dessert) => {
+function renderDesserts(filteredDesserts) {
+  dessertsHTML = '';
+  filteredDesserts.forEach((dessert) => {
     dessertsHTML += `
       <div class="content-container " onclick="window.location='#'">
         <div class="card card-hover">
@@ -134,7 +138,28 @@ let dessertsHTML = '';
       </div>
     `;
   });
-
-  console.log(dessertsHTML);
-
   document.querySelector('.js-preview-container').innerHTML = dessertsHTML;
+}
+
+/* Filter Desserts based on search input */
+document.addEventListener('DOMContentLoaded', () => {
+  renderDesserts(desserts);
+
+  const searchBar = document.querySelector('.js-search-bar');
+  const searchButton = document.querySelector('.js-search-button');
+
+  const performSearch = () => {
+    const query = searchBar.value.toLowerCase();
+    const filteredDesserts = desserts.filter(dessert =>
+      dessert.keywords.some(keyword => keyword.toLowerCase().includes(query))
+    );
+    renderDesserts(filteredDesserts);
+  };
+
+  searchButton.addEventListener('click', performSearch);
+  searchBar.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      performSearch();
+    }
+  });
+});
