@@ -123,7 +123,8 @@ let dessertsHTML = '';
           <div class="${dessert.image}"></div>
           <div class="text-container">
             <p class="publish-text-preset">${dessert.published}</p>
-            <p class="preview-title-text-preset title card-hover">${dessert.description}</p>
+            <p class="preview-title-text-preset title card-hover">${dessert.name}</p>
+            <p class="text-preset-4">${dessert.description}</p>
           </div>
           <div class="author-container">
             <p class="publish-text-preset">Recipe by:</p>

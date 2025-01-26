@@ -1,4 +1,4 @@
-const entrees = [
+let entrees = [
   {
     image: "og-shrimp-alf-image",
     published: "24 January 2025",
@@ -116,31 +116,51 @@ const entrees = [
       'entree'
     ]
   }
-
-]
+];
 
 let entreesHTML = '';
 
-entrees.forEach((entree) => {
-  entreesHTML += `
-    <div class="content-container " onclick="window.location='./cinnabon.html'">
-      <div class="card card-hover">
-        <div class="${entree.image}"></div>
-        <div class="text-container">
-          <p class="publish-text-preset">${entree.published}</p>
-          <p class="preview-title-text-preset title card-hover">${entree.name}</p>
-          <p class="text-preset-4">${entree.description}</p>
+const renderEntrees = (filteredEntrees) => {
+  entreesHTML = '';
+  filteredEntrees.forEach((entree) => {
+    entreesHTML += `
+      <div class="content-container" onclick="window.location='#'">
+        <div class="card card-hover">
+          <div class="${entree.image}"></div>
+          <div class="text-container">
+            <p class="publish-text-preset">${entree.published}</p>
+            <p class="preview-title-text-preset title card-hover">${entree.name}</p>
+            <p class="text-preset-4">${entree.description}</p>
+          </div>
+          <div class="author-container">
+            <p class="publish-text-preset">Recipe by:</p>
+            <p class="author-text-preset">${entree.author}</p>
+          </div>  
         </div>
-        <div class="author-container">
-          <p class="publish-text-preset">Recipe by:</p>
-          <p class="author-text-preset">${entree.author}</p>
-        </div>  
       </div>
-    </div>
-  `;
+    `;
+  });
+  document.querySelector('.js-preview-container').innerHTML = entreesHTML;
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderEntrees(entrees);
+
+  const searchBar = document.querySelector('.js-search-bar');
+  const searchButton = document.querySelector('.js-search-button');
+
+  const performSearch = () => {
+    const query = searchBar.value.toLowerCase();
+    const filteredEntrees = entrees.filter(entree => 
+      entree.keywords.some(keyword => keyword.toLowerCase().includes(query))
+    );
+    renderEntrees(filteredEntrees);
+  };
+
+  searchButton.addEventListener('click', performSearch);
+  searchBar.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      performSearch();
+    }
+  });
 });
-
-console.log(entreesHTML);
-
-document.querySelector('.js-preview-container')
-  .innerHTML = entreesHTML;
