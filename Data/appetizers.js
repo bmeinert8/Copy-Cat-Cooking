@@ -1,4 +1,4 @@
-const appetizers = [
+let appetizers = [
   {
     image: "rr-pickles-image",
     published: "20 October 2024",
@@ -130,23 +130,48 @@ const appetizers = [
 
 let appetizerHTML = "";
 
-appetizers.forEach((appetizer) => {
-  appetizerHTML += `
-    <div class="content-container " onclick="window.location='#'">
-    <div class="card card-hover">
-      <div class="${appetizer.image}"></div>
-      <div class="text-container">
-        <p class="publish-text-preset">${appetizer.published}</p>
-        <p class="preview-title-text-preset title card-hover">${appetizer.name}</p>
-        <p class="text-preset-4">${appetizer.description}</p>
+function renderAppetizers(filteredAppetizers){
+  let appetizerHTML = '';
+  filteredAppetizers.forEach((appetizer) => {
+    appetizerHTML += `
+      <div class="content-container " onclick="window.location='#'">
+      <div class="card card-hover">
+        <div class="${appetizer.image}"></div>
+        <div class="text-container">
+          <p class="publish-text-preset">${appetizer.published}</p>
+          <p class="preview-title-text-preset title card-hover">${appetizer.name}</p>
+          <p class="text-preset-4">${appetizer.description}</p>
+        </div>
+        <div class="author-container">
+          <p class="publish-text-preset">Recipe by:</p>
+          <p class="author-text-preset">${appetizer.author}</p>
+        </div>  
       </div>
-      <div class="author-container">
-        <p class="publish-text-preset">Recipe by:</p>
-        <p class="author-text-preset">${appetizer.author}</p>
-      </div>  
     </div>
-  </div>
-  `;
+    `;
+  });
+  document.querySelector('.js-preview-container').innerHTML = appetizerHTML;
+};
+
+/* Search Functionality */
+document.addEventListener('DOMContentLoaded', () => {
+  renderAppetizers(appetizers);
+
+  const searchBar = document.querySelector('.js-search-bar');
+  const searchButton = document.querySelector('.js-search-button');
+
+  const performSearch = () => {
+    const query = searchBar.value.toLowerCase();
+    const filteredAppetizers = appetizers.filter(appetizer =>
+      appetizer.keywords.some(keyword => keyword.toLowerCase().includes(query))
+    );
+    renderAppetizers(filteredAppetizers);
+  };
+
+  searchButton.addEventListener('click', performSearch);
+  searchBar.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      performSearch();
+    }
+  });
 });
-document.querySelector('.js-preview-container').
-  innerHTML = appetizerHTML;
