@@ -1,4 +1,4 @@
-const breakfast = [
+let breakfast = [
   {
     image: "cinnabon-cr-image",
     published: "20 October 2024",
@@ -123,24 +123,49 @@ const breakfast = [
 
 let breakfastHTML = '';
 
-breakfast.forEach((item) => {
-  breakfastHTML += `
-    <div class="content-container " onclick="window.location='./cinnabon.html'">
-      <div class="card card-hover">
-        <div class="${item.image}"></div>
-        <div class="text-container">
-          <p class="publish-text-preset">${item.published}</p>
-          <p class="preview-title-text-preset title card-hover">${item.name}</p>
-          <p class="text-preset-4">${item.description}</p>
+function renderBreakfast(filteredBreakfast){
+  breakfastHTML = '';
+  filteredBreakfast.forEach((item) => {
+    breakfastHTML += `
+      <div class="content-container " onclick="window.location='./cinnabon.html'">
+        <div class="card card-hover">
+          <div class="${item.image}"></div>
+          <div class="text-container">
+            <p class="publish-text-preset">${item.published}</p>
+            <p class="preview-title-text-preset title card-hover">${item.name}</p>
+            <p class="text-preset-4">${item.description}</p>
+          </div>
+          <div class="author-container">
+            <p class="publish-text-preset">Recipe by:</p>
+            <p class="author-text-preset">${item.author}</p>
+          </div>  
         </div>
-        <div class="author-container">
-          <p class="publish-text-preset">Recipe by:</p>
-          <p class="author-text-preset">${item.author}</p>
-        </div>  
       </div>
-    </div>
-  `
+    `;
+  });
+  document.querySelector('.js-preview-container').innerHTML = breakfastHTML;
+}
+
+
+/* Filter Breakfast based on search input */
+document.addEventListener('DOMContentLoaded', () => {
+  renderBreakfast(breakfast);
+
+  const searchBar = document.querySelector('.js-search-bar');
+  const searchButton = document.querySelector('.js-search-button');
+
+  const performSearch = () => {
+    const query = searchBar.value.toLowerCase();
+    const filteredBreakfast = breakfast.filter(item =>
+      item.keywords.some(keyword => keyword.toLowerCase().includes(query))
+    );
+    renderBreakfast(filteredBreakfast);
+  };
+
+  searchButton.addEventListener('click', performSearch);
+  searchBar.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      performSearch();
+    }
+  });
 });
-
-
-document.querySelector('.js-preview-container').innerHTML = breakfastHTML;

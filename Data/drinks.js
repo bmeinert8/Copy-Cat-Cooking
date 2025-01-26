@@ -1,4 +1,4 @@
-const drinks = [
+let drinks = [
   {
     image: "hp-butterbeer-image",
     published: "22 January 2025",
@@ -114,27 +114,53 @@ const drinks = [
   }
 ]
 
-let drinksHTML = "";
+/*render the drinks page html*/
 
-drinks.forEach((drink) => {
-  drinksHTML += `
-    <div class="content-container " onclick="window.location='./cinnabon.html'">
-      <div class="card card-hover">
-        <div class="${drink.image}"></div>
-        <div class="text-container">
-          <p class="publish-text-preset">${drink.published}</p>
-          <p class="preview-title-text-preset title card-hover">${drink.name}</p>
-          <p class="text-preset-4">${drink.description}</p>
+let drinksHTML = '';
+
+function renderDrinks(filteredDrinks){
+  drinksHTML = '';
+  filteredDrinks.forEach((drink)=> {
+    drinksHTML += `
+      <div class="content-container " onclick="window.location='./cinnabon.html'">
+        <div class="card card-hover">
+          <div class="${drink.image}"></div>
+          <div class="text-container">
+            <p class="publish-text-preset">${drink.published}</p>
+            <p class="preview-title-text-preset title card-hover">${drink.name}</p>
+            <p class="text-preset-4">${drink.description}</p>
+          </div>
+          <div class="author-container">
+            <p class="publish-text-preset">Recipe by:</p>
+            <p class="author-text-preset">${drink.author}</p>
+          </div>  
         </div>
-        <div class="author-container">
-          <p class="publish-text-preset">Recipe by:</p>
-          <p class="author-text-preset">${drink.author}</p>
-        </div>  
       </div>
-    </div>
-  `;
+    `;
+  });
+  document.querySelector('.js-preview-container').innerHTML = drinksHTML;
+};
+
+/*search bar functionality*/
+document.addEventListener('DOMContentLoaded', () => {
+  renderDrinks(drinks);
+
+  const searchBar = document.querySelector('.js-search-bar');
+  const searchButton = document.querySelector('.js-search-button');
+
+  const performSearch = () => {
+    const query = searchBar.value.toLowerCase();
+    const filteredDrinks = drinks.filter(drink =>
+      drink.keywords.some(keyword => keyword.toLowerCase().includes(query))
+    );
+    renderDrinks(filteredDrinks);
+  };
+
+  searchButton.addEventListener('click', performSearch);
+  searchBar.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      performSearch();
+    }
+  });
 });
 
-console.log(drinksHTML);
-
-document.querySelector('.js-preview-container').innerHTML = drinksHTML;
