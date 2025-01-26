@@ -120,7 +120,7 @@ let entrees = [
 
 let entreesHTML = '';
 
-const renderEntrees = (filteredEntrees) => {
+function renderEntrees(filteredEntrees){
   entreesHTML = '';
   filteredEntrees.forEach((entree) => {
     entreesHTML += `
