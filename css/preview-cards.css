@@ -317,6 +317,63 @@ p {
   background: url(/images/entrees/rl-lobster-tail.png) lightgray 50% /cover no-repeat;
 }
 
+/* others */
+.canes-sauce-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/others/canes-sauce.png) lightgray 50% /cover no-repeat;
+}
+
+.chick-fil-a-sauce-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/others/chick-fil-a-sauce.png) lightgray 50% /cover no-repeat;
+}
+
+.chipotle-gaucamole-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/others/chipotle-guac.png) lightgray 50% /cover no-repeat;
+}
+
+.chipotle-rice-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/others/chip-rice.png) lightgray 50% /cover no-repeat;
+}
+
+.wendys-chili-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/others/wendys-chili.png) lightgray 50% /cover no-repeat;
+}
+
+.kfc-coleslaw-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/others/kfc-slaw.png) lightgray 50% /cover no-repeat;
+}
+
+.olive-garden-alfredo-sacue-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/others/og-alfredo-sauce.png) lightgray 50% /cover no-repeat;
+}
+
+.famous-daves-bbq-sauce-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  background: url(/images/others/fd-bbq-sauce.png) lightgray 50% /cover no-repeat;
+}
+
 @media (min-width: 900px){
   .card-hover:hover {
   box-shadow: 16px 16px 0px 0px rgba(0, 0, 0, 0.25);
