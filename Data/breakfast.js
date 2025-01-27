@@ -153,6 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const searchBar = document.querySelector('.js-search-bar');
   const searchButton = document.querySelector('.js-search-button');
+  const resetButton = document.querySelector('.js-reset-search');
 
   const performSearch = () => {
     const query = searchBar.value.toLowerCase();
@@ -167,5 +168,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (event.key === 'Enter') {
       performSearch();
     }
+  });
+
+  resetButton.addEventListener('click', () => {
+    searchBar.value = '';
+    renderBreakfast(breakfast);
   });
 });
